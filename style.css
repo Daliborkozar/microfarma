@@ -1,0 +1,195 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0, .4) , rgba(0,0,0, .6)) , url(images/bg.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.banner-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.banner-text h1 {
+    color: #ffffff;
+    font-family: "Monserrat",sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.banner-text p {
+    color: #eeeeee;
+    font-family: "Josefine sans",sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-align: right
+}
+
+.btns {
+    position: absolute;
+    top: 50px;
+    right: 60px;
+}
+
+.btn {
+    width: 170px;
+    padding: 10px 15px;
+    border-radius: 50px;
+    margin-right: 20px;
+    font-family: "Josefine Sans" , sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    outline: none;
+    cursor: pointer;
+    color: #ffffff;
+    border: 2px solid #195922;
+    transition: transform .3s;
+}
+
+.login-btn {
+    background-color: #195922;
+}
+
+.signin-btn {
+    background-color: transparent;
+}
+
+.btn:hover {
+    transform: translateY(-2px)
+}
+
+.btn:active {
+    transform: translateY(-1px);
+}
+
+.form-container {
+    position: fixed;
+    background-color: rgba(0,0,0, .6);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+
+.disable {
+    opacity: 1;
+    visibility: visible
+}
+
+.modal {
+    width: 400px;
+    background: linear-gradient(to bottom, rgba(156,223,48,1) 0%, rgba(33,117,27,0.7) 84%, rgba(22,107,25,0.75) 92%, rgba(13,99,24,0.75) 98%) , url(images/bg.jpg) center no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    border-radius: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+    
+
+}
+
+.display {
+    opacity: 1;
+    visibility: visible;
+    
+}
+
+.x-btn {
+    position: absolute;
+    right: 20px;
+    font-size: 20px;
+    color: #222222;
+    cursor: pointer;
+}
+
+.form-header {
+    text-align: center;
+    color: #ffffff;
+    margin: 80px 0 150px 0;
+}
+
+.form-header h1 {
+    font-family: "Josefine Sans" , sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.form-header h3 {
+    font-family: "Montserrat" , sans-serif;
+    font-size: 20px;
+    font-weight: 0;
+    text-transform: uppercase;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input-group input{
+    width: 250px;
+    padding: 15px 15px 15px 50px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-family: "Josefine Sans", sans-serif;
+    font-size: 15px;
+    background: rgba(0,0,0, .6);
+    color: #f1ecec; 
+}
+
+.input-group i{
+    position: absolute;
+    transform: translate(20px , 15px);
+    font-size: 18px;
+    color: #aaaaaa;
+}
+
+.form button {
+    width: 315px;
+    padding: 12px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    background: #43b352;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 15px 0 50px 0;
+    box-shadow: 0 5px 20px rgba(0,0,0, .4);
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.form button:hover {
+    transform: translateY(-2px)
+}
+
+.form button:active {
+    transform: translateY(-1px);
+}
